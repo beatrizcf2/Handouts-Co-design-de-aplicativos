@@ -1,22 +1,30 @@
-.header {
+.header{
+  font-size:40px; 
+  color:black; 
+  font-weight:bold; 
+  text-align:center; 
+  margin-top: 3rem;
+  margin-bottom:1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Questrial", sans-serif;
+}
+
+.nav {
   left: 5%;
   top: 10%;
   width: 100%;
   height: 100%;
-  border-style: solid;
-  border-width: 0.1rem;
   display: flex;
   align-items: center;
-  background-color: #566D7E;
+  background-color: #2dbfc9;
 }
 
+
 .menu {
-  background-color: #A6BDCE;
-  width: 10rem;
-  height: 30rem;
-  border-style: solid;
-  border-width: 0.1rem;
-  border-color: rgb(255,0,0);
+  background-color: #9eebed;
+  width: 15rem;
+  height: 100rem;
 }
 
 .main-img-cont{
@@ -29,7 +37,8 @@
 .portfolio {
   margin: 0.5rem;
   width: 5rem;
-  height: 3rem;
+  height: 4.5rem;
+  border-radius: 5rem;
 }
 
 .main-menu {
@@ -43,7 +52,6 @@
   margin-left: 0.5rem;
   font-family: "Lato", serif;
   text-transform: uppercase;
-  font
 }
 
 a:link{
@@ -57,28 +65,23 @@ a:link{
   position: relative;
   left: 2rem;
   top: 1rem;
+  border-radius: 5rem;
 }
 
 .profile-text{
+  margin: 1rem;
   width: 30rem;
   font-family: "Lato", serif;
   line-height: 1.5rem;
   position: relative;
   top: 1.5rem;
+  align-items: center;
 }
 
-.destaque{
-  font-family: "Lato", serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.5rem;
-  padding-bottom: 0.5rem;
-  padding-top: 2rem;
-  font-size: 1rem;
-}
 
 /* index.html */
 
+/*
 .parent {
   display: grid;
   grid-template-columns: 85%;
@@ -87,6 +90,7 @@ a:link{
   position: relative;
   top: -32rem;
 }
+*/
 
 .index-title {
   display: flex;
@@ -224,39 +228,38 @@ a:link{
 
 /* projeto.html */
 
-.parent {
-  display: grid;
-  grid-template-columns: 85%;
-  justify-content: flex-end;
-  margin-right: 1rem;
-  position: relative;
-  top: -32rem;
-}
-
 .project-main{
   display: flex;
-  flex-wrap: wrap;
-  display: grid;
-  grid-template-columns: 85%;
-  justify-content: flex-end;
-  margin-right: 1rem;
-  position: relative;
-  top: -32rem;
-
+  justify-content: flex;
+  margin-right: 5rem;
+  margin-top: 0.3rem;
+  margin-left: 0.3rem;
+  position: absolute;
+  height: 100%;
+  width: 100%;
 }
+
+
+.corpo-texto{
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+
 
 .project-title {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
+  justify-content: left;
+  align-items: left;
+  margin-left: 2rem;
+  margin-top: 0rem;
   width: 100%;
   font-weight: bold;
   font-family: 'Yrsa', serif;
-  font-size:2.5rem;
+  font-size:4rem;
   text-transform: uppercase;
 }
-
+/*
 .project-cont{
   display: flex;
   width: 100%;
@@ -264,22 +267,25 @@ a:link{
   margin: 2rem;
   flex-wrap: wrap;
 }
-
+*/
 .project-image-cont{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   padding: 2rem;
 }
 
 .project-image {
-  width: 5%;
-  height: 15%;
+  width: 50%;
+  height: 100%;
+  border-radius: 0.4rem;
 }
 
 .project-text {
-  padding: 2rem;
+  padding: 1rem;
   width: 30rem;
+  justify-content: left;
+  align-items: left;
   font-family: "Lato", serif;
   line-height: 1.5rem;
 }
@@ -288,8 +294,23 @@ a:link{
   font-family: "Lato", serif;
   font-weight: bold;
   text-transform: uppercase;
+  line-height: 1rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  background-color: #d1eef0;
+  
+}
+
+.destaque-profile{
+  font-family: "Lato", serif;
+  font-weight: bold;
+  text-transform: uppercase;
   line-height: 1.5rem;
   padding-bottom: 0.5rem;
   padding-top: 2rem;
   font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+
 }
