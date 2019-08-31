@@ -81,17 +81,6 @@ a:link{
 
 /* index.html */
 
-/*
-.parent {
-  display: grid;
-  grid-template-columns: 85%;
-  justify-content: flex-end;
-  margin-right: 1rem;
-  position: relative;
-  top: -32rem;
-}
-*/
-
 .index-title {
   display: flex;
   justify-content: space-between;
@@ -161,6 +150,7 @@ a:link{
   font-family: "Lato", sans-serif;
   line-height: 1rem;
 }
+
 
 /* categoria.html */
 
