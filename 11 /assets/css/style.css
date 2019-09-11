@@ -264,9 +264,11 @@ a:link{
 
 .projects-menu-item {
   padding-left: 4rem;
+  padding-right: 6rem;
   display: flex;
   margin-left: 0%;
   align-items: center; /*colocar no meio*/
+  width: 100%;
 }
 
 .projects-menu-item-image {
@@ -284,7 +286,7 @@ a:link{
 
 @media (max-width: 68rem) {
   .projects-menu {
-    margin-top: 2rem;
+    /*margin-top: 2rem;*/
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -295,7 +297,15 @@ a:link{
   }
 
   .category-text {
-    width: 100%;
+    width: 60%;
+    font-family: "Questrial", sans-serif;
+    font-size: 2rem;
+  }
+
+  .category-title{
+      font-family: "Questrial", sans-serif;
+      font-size: 5rem;
+      width: 100%
   }
 
   .projects-menu {
