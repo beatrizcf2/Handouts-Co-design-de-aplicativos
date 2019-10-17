@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: .75fr 5fr auto;
   grid-template-rows: .5fr 1fr auto;
-  grid-gap: .5rem;
+  grid-gap: 0.2rem;
 }
 
 /*-----------------------*/
@@ -90,7 +90,6 @@
   grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 4;
-  margin-left: .5rem;
 }
 
 .sections-menu-item-text {
@@ -148,6 +147,7 @@
 
 /* categoria.html */
 
+
 .category {
   padding: .5rem;
   font-family: Hepta Slab, Yrsa, serif;
@@ -174,14 +174,6 @@
   height: 15rem;
   border-radius: .5rem;
 
-}
-
-.projects-menu-item-title {
-  font-family: Hepta Slab, Yrsa, serif;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  background-color: #d1eef0;
 }
 
 .projects-menu-item-title {
