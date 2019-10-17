@@ -5,8 +5,8 @@
   <link href="https://fonts.googleapis.com/css?family=Hepta+Slab|Lato|Questrial|Yrsa:700&display=swap" rel="stylesheet">
   <link href="assets/css/reset.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-  <script src= "assets/js/categoria.js"></script>
-  <script src= "assets/js/codes.js"></script>
+  <script src= "assets/jv/categoria.js"></script>
+  <script src= "assets/jv/codes.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
@@ -23,7 +23,7 @@
       </a>
     </div>
     <ul class="main-menu">
-      {{#each portfolio}} 
+      {{#each Portifolio}} 
         <li class="main-menu-item"><a href="categoria.html?key={{@key}}">{{this.categoria}}</a></li>
       {{/each}}
     </ul>
@@ -35,27 +35,28 @@
         Meus Projetos
       </p>
         <p class = "category-text"> 
-            {{this.categoria}}
+            {{categoria}}
         </p>
           
     </div>
     <div class="itens-categoria"> 
       <ul class="projects-menu"> 
+        {{#each projetos}}
         <li class="projects-menu-item"> 
-          {{#each projeto}} 
-            <a href="projeto.html?key={{@key}}">
+           
+            <a class = "link" href="projeto.html?key={{@key}}">
               <img class="projects-menu-item-image" src="assets/img/{{@key}}.jpeg" alt={{@key}}> 
             </a>
             <div class="projects-menu-item-text"> 
-              <p class="projects-menu-item-title">
-                <a href="projeto.html?key={{@key}}">{{this.categoria}}</a> 
-              </p>
+            
+            
               <p class="descricao-categoria">
                 {{this.descricao}}
               </p>
             </div>
-          {{/each}}
+          
         </li>
+        {{/each}}
       </ul>
     </div>
   </main>

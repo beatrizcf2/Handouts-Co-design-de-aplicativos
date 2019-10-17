@@ -5,8 +5,8 @@
   <link href="https://fonts.googleapis.com/css?family=Hepta+Slab|Lato|Questrial|Yrsa:700&display=swap" rel="stylesheet">
   <link href="assets/css/reset.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
-  <script src= "assets/js/index.js"></script>
-  <script src= "assets/js/codes.js"></script>
+  <script src= "assets/jv/codes.js"></script>
+  <script src= "assets/jv/index.js"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
@@ -16,17 +16,17 @@
     Meu Portfólio
   </header>
 
-  <nav class="nav">
+  <nav class="nav"> 
     <div class="portfolio">
       <a href="index.html">
         <img class="logo" src="assets/img/meuportifolio.png" alt="logo do portfólio">
       </a>
     </div>
-    <ul class="main-menu">
-      {{#each portfolio}} 
+    {{#each portfolio}}
+    <ul class="main-menu"> 
         <li class="main-menu-item"><a href="categoria.html?key={{@key}}">{{this.categoria}}</a></li>
-      {{/each}}
     </ul>
+    {{/each}}
   </nav>
 
   <main class="main">
@@ -38,8 +38,8 @@
 
     <section class="index-texto">
       <ul class="sections-menu">
+        {{#each portfolio}}
         <li class="sections-menu-item">
-          {{#each portfolio}}
             <a href="categoria.html?key={{@key}}">
               <img class="sections-menu-item-image" src="assets/img/{{@key}}.jpeg" alt={{@key}}>
             </a>
@@ -51,8 +51,8 @@
                 {{this.descricao}}
               </p>
             </div>
-          {{/each}}
         </li>
+        {{/each}}
       </ul>
     </section>
   </main>

@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   db.download('/', function(data) {
     context = {'portfolio':data['Portifolio']}
-    coDesReplace('.main-menu', context)
-    coDesReplace('.sections-menu-item', context)
+     console.log(context)
+    coDesReplace('.nav', context)
+    coDesReplace('.index-texto', context)
   })
 })

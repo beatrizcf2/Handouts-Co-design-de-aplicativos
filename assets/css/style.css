@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: .75fr 5fr auto;
   grid-template-rows: .5fr 1fr auto;
-  grid-gap: 0.2rem;
+  grid-gap: .5rem;
 }
 
 /*-----------------------*/
@@ -90,6 +90,7 @@
   grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 4;
+  margin-left: .5rem;
 }
 
 .sections-menu-item-text {
